@@ -12,7 +12,7 @@ public class MinimalDistanceFromLocationToLineTest {
 
     @ParameterizedTest
     @MethodSource("provideArguments")
-    void calculateMinimalDistance(Line line, Location midPoint, double expected) {
+    void calculateMinimalDistanceTo(Line line, Location midPoint, double expected) {
         assertEquals(expected, line.calculateMinDistanceInMeters(midPoint));
     }
 
